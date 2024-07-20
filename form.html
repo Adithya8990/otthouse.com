@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DEMO</title>
+    <style>
+        body {
+            
+            background-position: center;
+            background-repeat: repeat;
+            margin: auto;
+            scrollbar-color: mediumvioletred;
+        }
+        
+
+       
+
+        h1 {
+            text-align: center;
+            color: goldenrod;
+            justify-content: center;
+            backface-visibility: 50px;
+           
+        }
+
+        input[type=email],input[type=password],
+        input[type=text] {
+            width: 60%;
+            padding: 2px 2px;
+            margin: 8px 8px;
+            box-sizing: border-box;
+            border: 0.5px solid black; 
+            outline: none;
+            
+        }
+        input[type=email]:focus,input[type=password]:focus,
+        input[type=text]:focus
+        {background-color: lightcyan;
+        }
+        #mail
+        {margin-left: 18px;}
+        #pwd
+        {margin-left: 13px;}
+
+
+        div.form {
+            border: 2px solid grey;
+            width: 400px;
+            backdrop-filter: blur(2px);
+            
+            height: 350px;
+            border-spacing: 20px;
+            margin: 20px auto;
+            margin-bottom: 100px;
+            
+            transform-box: stroke-box;
+
+            padding: 20px;
+        }
+        button.login
+        {padding-right: 0px;
+
+            align-items: center;}
+
+        button {
+            width: 50%;
+            padding: 4px 2px;
+            background-color: none;
+            margin-left: 100px;
+
+            float: center;
+            border-radius: 5px;
+        }
+        button:hover
+        {background-color:lightseagreen; }
+        
+        
+        label
+        {table-layout: fixed;
+            size: 200;
+        }
+        #last {
+            background-color: #f1f1f1;
+  text-align: center;
+  margin-top: 60px;
+
+}
+#myvideo {
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 100%; 
+  max-height: 100;
+  z-index: -1;
+}
+
+    </style>
+}
+</head>
+
+<body>
+<video id="myvideo" src="C:\Users\adith\Downloads\clouds.mp4" autoplay muted loop plays-inline></video>
+    
+        
+        <form action="file:///C:/Users/adith/OneDrive/Documents/HTML/OTT%20HOUSE/a1.html">
+            <div class="form">
+            <h1>LOGIN PAGE </h1>
+            <p style=" color:black;">Please fill in this form to get into the <B>OTT HOUSE<B></p>
+            <label id="name" style="font-family: serif; color: yellowgreen;"><b>UserName :</b></label>
+            <input type="text" size="20" placeholder="Enter Your Name" /><br>
+            <label style="font-family: serif; color: darkviolet;"><strong>Email Id :</strong></label>
+            <input id="mail" type="email" size="20" placeholder="abcdefgh@gmail.com" autocomplete="on" required /><br>
+            <label style="font-family: serif; color:palevioletred;"><b>Password :</b></label>
+            <input id="pwd" type="password" placeholder="Enter your password" autocomplete="on" />
+
+            <br><br><button class="login" type="submit" value="Submit">Login</button>
+            
+        
+    
+   <br> <p id="last"> Don't have account? <a href="#">Register now</a>.</p>
+  </div>
+</form>
+    
+
+</body>
+
+</html>
